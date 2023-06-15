@@ -1,0 +1,19 @@
+name = "template-site-hello-world"
+version = "1.0.0"
+type = "site"
+content_type = "html"
+
+[deployment]
+nodes = 1
+
+[build]
+dir = ".bls"
+public_dir = "public"
+entry = "template-site-hello-world_debug.wasm"
+command = ""
+
+[build_release]
+dir = ".bls"
+public_dir = "public"
+entry = "template-site-hello-world.wasm"
+command = ""
